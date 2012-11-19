@@ -16,7 +16,7 @@ Tested on
 
 Writed by Luiz. Just include the files on */module/uart* inside the library and start it up with :
 
-'startup (BAUD_RATE);'
+	startup (BAUD_RATE);
 
 Where **BAUD_RATE** is the frequency that is wanted for RS232.
 	
@@ -24,6 +24,6 @@ Where **BAUD_RATE** is the frequency that is wanted for RS232.
 
 Writed by Kimballr (rick@kimballsoftware.com). Include the file */module/usci_serial.h* inside the library and start it up with:
 
-'serial_initialize((SMCLK_FREQ + (BAUD_RATE >> 1)) / BAUD_RATE);'
+	serial_initialize((SMCLK_FREQ + (BAUD_RATE >> 1)) / BAUD_RATE);
 
 Where **BAUD_RATE** is the frequency that is wanted for RS232 and **SMCLK_FREQ** is the frequency of the MSP430.
