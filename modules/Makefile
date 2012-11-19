@@ -2,10 +2,10 @@ include ../Makefile.inc
 
 SRC=mmc/mmc.c  \
 	mmc/pff.c  \
-	mmc/usci_serial.c  \
+	uart/uart.c \
 	mmc/usci_spi.c 
-	#mmc/uart.c \
-
+	#mmc/usci_serial.c  \
+	
 ROOT_DIR =..
 
 OBJS = ${SRCS:.c=.o}
